@@ -4,10 +4,10 @@
 * 詳しくはこちらを参照してください：https://minecraft.makecode.com/blocks/custom
 */
 /**
- * projectleaf
+ * laboratoryofpharmacology
  */
 //% weight=100 color=#0fbc11 icon=""
-namespace projectleaf {
+namespace laboratoryofpharmacology {
 
     let N = 0
     // 空気
