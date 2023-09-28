@@ -7,7 +7,7 @@
  * laboratoryofpharmacology
  */
 //% weight=100 color=#0fbc11 icon=""
-namespace laboratoryofpharmacology {
+namespace pharmacology {
 
     let N = 0
     // 空気
