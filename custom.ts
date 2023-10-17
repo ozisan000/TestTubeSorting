@@ -6,7 +6,7 @@
 /**
  * laboratoryofpharmacology
  */
-//% weight=100 color=#0fbc11 icon=""
+//% weight=100 color=#008080 icon="×"
 namespace pharmacology {
 
     let N = 0
