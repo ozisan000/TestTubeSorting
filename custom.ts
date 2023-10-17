@@ -109,9 +109,8 @@ namespace pharmacology {
         }
         for (i = 0; i < 5; i += 1) {
             for (let j = 0; j < 2; j += 1) {
-                blocks.place(ConvertBlock(N), world(tubePos[i][j][0], tubePos[i][j][1], tubePos[i][j][2]))
-                blocks.place(ConvertBlock(tube[i][j]), world(tubePos[i][j][0], tubePos[i][j][1], tubePos[i][j][2]))
-
+                let placePos = world(tubePos[i][j][0], tubePos[i][j][1], tubePos[i][j][2])
+                blocks.fill(ConvertBlock(tube[i][j]), placePos, placePos,FillOperation.Replace)
             }
         }
 
