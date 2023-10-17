@@ -158,7 +158,7 @@ namespace pharmacology {
             for (j = 1; j > -1; j += -1) {
                 // 選択した試験管の層 == 空気 && ((選択先の下層の色 == コピー元の試験官の色) || (選択先の下層の色 == 空気))
                 if (tube[selectTube][j] == N && (underCol == tube[copyTube][copyRow] || underCol == N)) {
-                    player.say("set:" + tube[copyTube][copyRow])
+                    //player.say("set:" + tube[copyTube][copyRow])
                     tube[selectTube][j] = tube[copyTube][copyRow]
                     p = tubePos[copyTube][copyRow]
                     blocks.place(ConvertBlock(N), world(p[0], p[1], p[2]))
@@ -169,7 +169,7 @@ namespace pharmacology {
                 } else if (tube[selectTube][j] != N) {
                     // 試験管の下層に色が存在する場合
                     underCol = tube[selectTube][j]
-                    player.say("under:" + underCol)
+                    //player.say("under:" + underCol)
                 }
 
             }
