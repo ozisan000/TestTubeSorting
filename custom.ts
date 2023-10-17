@@ -105,7 +105,8 @@ namespace pharmacology {
         let i: number;
 
         for (i = 0; i < 3; i += 1) {
-            blocks.place(AIR, world(selectPosList[i][0], selectPosList[i][1], selectPosList[i][2]))
+            let placePos = world(selectPosList[i][0], selectPosList[i][1], selectPosList[i][2])
+            blocks.fill(AIR, placePos, placePos )
         }
         for (i = 0; i < 5; i += 1) {
             for (let j = 0; j < 2; j += 1) {
